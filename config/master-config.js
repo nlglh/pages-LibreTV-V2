@@ -5,8 +5,7 @@ const MASTER_CONFIG = {
     // 🔐 核心认证配置（只需要在这里修改）
     auth: {
         username: 'admin',                    // 用户名
-        password: 'glh5204', // 🔥 修改这里设置自定义密码
-       // password: 'admin123',
+        password: 'admin123', // 🔥 修改这里设置自定义密码
         enabled: true,                        // 是否启用密码保护
         sessionDuration: 90 * 24 * 60 * 60 * 1000,  // 90天
         maxLoginAttempts: 5,                  // 最大尝试次数
@@ -261,3 +260,4 @@ if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' |
     console.log('🌐 代理调试:', MASTER_CONFIG.proxy.debug ? '已启用' : '已禁用');
 
 }
+
